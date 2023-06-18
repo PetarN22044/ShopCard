@@ -26,17 +26,21 @@ let products = [
     }
   ];
 
- let productCardsContainer = document.getElementById('product-cards');
+
+  const productCardsContainer = document.querySelector('.product-cards');
 
   products.forEach((product) => {
-    const card = document.createElement('div');
-    card.className = 'col-lg-4 col-md-6 mb-4';
-    card.innerHTML = `
-      <img src="${product.image}" class="card-img-top" alt="${product.name}">
-      <div class="card-body">
-        <h5 class="card-title">${product.name}</h5>
-        <p class="card-text">${product.description}</p>
-      </div>
+    const cardDiv = document.createElement('div');
+    cardDiv.className = 'product-card';
+    cardDiv.innerHTML = `
+    <div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">${product.name}e</h5>
+      <p class="card-text">${product.description}.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
     `;
-    productCardsContainer.appendChild(card);
+    productCardsContainer.appendChild(cardDiv);
   });
