@@ -2,27 +2,32 @@ let products = [
     {
       name: 'Продукт 1',
       description: 'Опис на продукт 1',
-      image: 'патека_до_слика1.jpg'
+      image: '../ShopCard/herba Products Img/herba1.png'
     },
     {
       name: 'Продукт 2',
       description: 'Опис на продукт 2',
-      image: 'патека_до_слика2.jpg'
+      image: '../ShopCard/herba Products Img/herba2.jpg'
     },
     {
       name: 'Продукт 3',
       description: 'Опис на продукт 3',
-      image: 'патека_до_слика3.jpg'
+      image: '../ShopCard/herba Products Img/herba6.jpg'
     },
     {
       name: 'Продукт 4',
       description: 'Опис на продукт 4',
-      image: 'патека_до_слика4.jpg'
+      image: '../ShopCard/herba Products Img/herba7.jpg'
     },
     {
       name: 'Продукт 5',
       description: 'Опис на продукт 5',
-      image: 'патека_до_слика5.jpg'
+      image: '../ShopCard/herba Products Img/herba8.jpg'
+    },
+    {
+      name: 'Продукт 5',
+      description: 'Опис на продукт 5',
+      image: '../ShopCard/herba Products Img/herba44.jpg'
     }
   ];
 
@@ -34,7 +39,7 @@ let products = [
     cardDiv.className = 'product-card';
     cardDiv.innerHTML = `
     <div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
+    <img src="${product.image}" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">${product.name}e</h5>
       <p class="card-text">${product.description}.</p>
