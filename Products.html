@@ -7,56 +7,58 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/all.min.css">
-    <link rel='stylesheet' type='text/css' media='screen' href='main1.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='product.css'>
     
     <title>Document</title>
 </head>
 <body>
-    <div class="background-section">
-        <div class="container">
-          <nav class="navbar navbar-expand-lg navbar-light py-5">
-            <a class="navbar-brand" href="#">
-              <img src="./images/print-163361306.webp" alt="Лого" class="logo"> 
-              <!-- ova e slika za logovo  -->
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link mx-3 fontSize" href="dsadas.html"><p class="fontSize">Home</p> </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link mx-3 fontSize" href="#"><p class="fontSize">About</p> </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link mx-3 fontSize" href="#"><p class="fontSize">FAQ</p> </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link mx-3 " href="Products.html"><p class="fontSize">Product</p> </a>
-                </li>
-              </ul>
-            </div>
-            <div class="d-flex m-lg-3">
-              <button class="btn btn-primary">Register</button>
-            </div>
-            <div class="d-flex m-lg-2">
-              <button class="btn btn-primary">Login</button>
-            </div>
-          </nav>
-        </div>
-<!-- ova e za delov na batonov i tekstov vo slikava vnatre so e -->
-        <div class="container buttonSizeText">
-            <div class="row justify-content-end">
-              <div class="col-md-6">
-                <h1 class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
-                <p class="text-white">Lorem ipsum dolor sit amet.</p>
-                <button class="btn btn-primary">Click Me</button>
-              </div>
-            </div>
-          </div>
-        </div>
-    
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">
+        <img src="./images/print-163361306.webp" alt="Лого" width="50" height="50">
+        Herbal Products
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="dsadas.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Products.html">Product</a>
+          </li>
+        </ul>
+      </div>
+      <div class="ml-auto">
+        <button class="btn btn-primary btn-register">Register</button>
+        <button class="btn btn-primary btn-login">Login</button>
+      </div>
+    </nav>
+  </div>
+
+  
+
+  <div class="container">
+    <div class="row" id="product-cards">
+    </div>
+  </div>
+
+
+ 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+ <script src="product.js"></script>   
 </body>
 </html>
