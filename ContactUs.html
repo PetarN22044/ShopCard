@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='ContactUs.css'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/all.min.css">
+    <!-- ovie deloj se za slicinja so fa-fa za fb insta i ostanati sliki so se -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+<!-- za boostrap -->
+
+
+    <script src='main.js'></script>
+</head>
+<body>
+    <!-- nav barot toj neka e static i ist i e vo boostrap a ostanatovo e racno-->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#">
+            <img src="./images/print-163361306.webp" alt="Лого" width="50" height="50">
+            Herbal Products
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="dsadas.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Products.html">Product</a>
+              </li>
+            </ul>
+          </div>
+          <div class="ml-auto">
+            <button class="btn btn-primary btn-register">Register</button>
+            <button class="btn btn-primary btn-login">Login</button>
+          </div>
+        </nav>
+      </div>
+
+<!-- header kaj so e oboen ako trebit ke se menit bojava bg -nesto ili ke stajme klasa i ke menime boja -->
+      <header class="bg-dark text-white py-3">
+        <div class="container">
+            <h1>Contact Us</h1>
+        </div>
+    </header>
+    <!--ovde pocvit sekcijava so prasanjava  -->
+    <section class="container mt-4">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="4" required class="form-control"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark">Send</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="faq">
+                    <div class="question" onclick="toggleAnswer(1)">How do I place an order?</div>
+                    <div class="answer" id="answer-1">
+                        <p>You can place an order by visiting our online store and selecting the desired herbal products. Add them to your shopping cart and proceed to checkout.</p>
+                    </div>
+                    <div class="question" onclick="toggleAnswer(2)">What payment methods do you accept?</div>
+                    <div class="answer" id="answer-2">
+                        <p>We accept various payment methods, including credit cards, PayPal, and bank transfers. You can choose the preferred option during the checkout process.</p>
+                    </div>
+                    <div class="question" onclick="toggleAnswer(3)">Do you offer international shipping?</div>
+                    <div class="answer" id="answer-3">
+                        <p>Yes, we offer international shipping. We ship our herbal products to customers worldwide. Shipping costs and delivery times may vary depending on the destination.</p>
+                    </div>
+                    <div class="question" onclick="toggleAnswer(4)">How can I track my order?</div>
+                    <div class="answer" id="answer-4">
+                        <p>Once your order is shipped, you will receive a tracking number via email. You can use this tracking number to track the status and location of your package on our website or the shipping carrier's website.</p>
+                    </div>
+                    <div class="question" onclick="toggleAnswer(5)">What is your return policy?</div>
+                    <div class="answer" id="answer-5">
+                        <p>We have a 30-day return policy. If you are not satisfied with your purchase, you can return the product within 30 days of receiving it for a refund or exchange. Please refer to our Returns and Refunds page for more detailed information.</p>
+                    </div>
+                    <div class="question" onclick="toggleAnswer(6)">Are your products organic?</div>
+                    <div class="answer" id="answer-6">
+                        <p>Yes, our products are made from organic ingredients. We prioritize using high-quality organic herbs to ensure the purity and effectiveness of our products.</p>
+                    </div>
+                    <div class="question" onclick="toggleAnswer(7)">How long does shipping take?</div>
+                    <div class="answer" id="answer-7">
+                        <p>The shipping time depends on your location. For domestic orders, it usually takes 2-5 business days. International orders may take longer, typically around 7-14 business days. Please note that these are estimated delivery times and actual delivery may vary.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+  <!-- sekcija so nasi sliki -->
+    
+    <section class="container mt-4">
+        <div class="row text-center">
+            <div class="col-md-6">
+                <div class="about-person d-flex flex-column align-items-center">
+                    <img src="./Our Images/72236411_398774567732663_3588548791894016000_n.jpg" alt="Your Name" class="circle-image">
+                    <h2>Jovan Mileski</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iusto possimus nostrum et delectus debitis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti ad officia consequuntur.</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="about-person d-flex flex-column align-items-center">
+                    <img src="./Our Images/275788565_5300492736701000_4765916202258588658_n.jpg" alt="Friend's Name" class="circle-image">
+                    <h2>Petar Nikoloski</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil cum ipsum tempora delectus, quibusdam deserunt.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, repellat.</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- ovde e fa-fa sekcijava -->
+    <!-- ova e vo sekcija kaj so stojat fa-fa nesto tamu nekoi sliki  -->
+<section class="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="feature-item">
+            <i class="fa fa-laptop"></i>
+            <h3>Responsive Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-item">
+            <i class="fa fa-code"></i>
+            <h3>Clean Code</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-item">
+            <i class="fas fa-headset"></i>
+          <h3>24/7 Support</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- i ovde e futerov -->
+  <footer class="herbal-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="footer-logo">
+            <img src="./images/LogoFooter/pexels-ready-made-3850542.jpg" alt="Herbal Logo">
+          </div>
+          <p class="footer-description">We provide natural herbal products for a healthier lifestyle.</p>
+        </div>
+        <div class="col-md-4">
+          <h3 class="footer-title">Explore</h3>
+          <ul class="footer-links  list-style-none">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3 class="footer-title">Connect</h3>
+          <ul class="footer-social-links  list-style-none">
+            <li><a href="#" class="footer-social-icon"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#" class="footer-social-icon"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" class="footer-social-icon"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+    
+    
+    
+    
+    
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+      
+    <script src="AboutUs.js"></script>
+</body>
+</html>
