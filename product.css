@@ -1,3 +1,4 @@
+/* vo ovoj del e CSS za karticite od produktive */
 .product-cards {
     display: flex;
     flex-wrap: wrap;
@@ -29,3 +30,84 @@
     font-size: 14px;
   }
   
+  /* ovde e sekcija na fa-fa so se mislit na respozivnost i 24/7 */
+  .features {
+    padding: 100px 0;
+    background: #f7f7f7;
+  }
+  
+  .feature-item {
+    text-align: center;
+  }
+  
+  .feature-item i {
+    font-size: 3rem;
+    color: #1abc9c;
+  }
+  
+  .feature-item h3 {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .feature-item p {
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+
+  /* ovde e futerov */
+  .herbal-footer {
+    background: linear-gradient(135deg, #5cbf9d, #88d498);
+    padding: 40px 0;
+  }
+  
+  
+  .footer-logo img {
+    max-width: 150px;
+    position: relative;
+    left: 90px;
+  }
+  
+  .footer-description {
+    color:white;
+    font-size: 14px;
+    margin: 10px;
+  }
+  
+  .footer-title {
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .footer-links li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-links a {
+    
+    color: #555;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #f9a825;
+  }
+  
+  .footer-social-icon {
+   
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #555;
+  }
+  
+  .footer-social-icon:hover {
+    color: #f9a825;
+  }
+  .list-style-none{
+     list-style: none;
+  }
