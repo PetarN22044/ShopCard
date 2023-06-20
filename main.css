@@ -330,3 +330,36 @@
   .list-style-none{
      list-style: none;
   }
+
+  /* payment methods */
+  .payment-card {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin: 15px;
+  }
+  
+  .payment-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .payment-card i {
+    font-size: 36px;
+    color: #888;
+    margin-bottom: 10px;
+  }
+  
+  .payment-title {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .payment-description {
+    font-size: 14px;
+    color: #777;
+  }
+  
