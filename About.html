@@ -12,6 +12,10 @@
      <!-- ova e za boostrapov -->
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
 
+     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+
    
 
      <!-- ovde pod ova e fontAwesome so fa fa sliki tuka spaget emotikonive so se so fb instagram i ostanati -->
@@ -48,11 +52,12 @@
         </ul>
       </div>
       <div class="ml-auto">
-        <button class="btn btn-primary btn-register d-lg-none">Register</button>
-        <button class="btn btn-primary btn-login d-lg-none">Login</button>
+      
       </div>
     </nav>
   </div>
+  <a class="btn btn-primary" id="loggedInUser" style="display: none;"></a>
+  <button id="logoutBtn" class="btn btn-primary" style="display: none;">Logout</button>
   
 <!-- ova e cel container so samoto so boostrap gi citat,se odnesvit na tekstot i kako benefiti nesto od seto ova -->
       <div class="container">

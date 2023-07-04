@@ -363,3 +363,62 @@
     color: #777;
   }
   
+
+
+
+
+/* ova e forma za Register */
+section.vh-60 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+ height: 10vh;
+ width: 200vh;
+ z-index: 9999;
+}
+/* OVoj del e za batonov koj e dodaden plus racno vo sekcijava vo JS so e register forma */
+.form-container {
+  position: relative;
+}
+
+#closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* delot kaj so e najaven */
+#loggedInUser {
+  display: none;
+  background-color: #ffffff;
+  color: #333333;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+#loggedInUser::before {
+  content: "Welcome, ";
+}
+
+#loggedInUser:hover {
+  background-color: #f0f0f0;
+}
+
+/* button logout */
+#logoutBtn {
+  display: none;
+  margin-left: 8px;
+}
+#loggedInUser {
+  position: relative;
+}
+
+
