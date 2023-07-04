@@ -27,12 +27,11 @@ let name = getElementVal('form3Example1cg');
 let yourEmail = getElementVal('form3Example3cg');
 let password = getElementVal('form3Example4cg');
 let confirmPassword = getElementVal('form3Example4cdg');
-
-  // Проверка за валидност на лозинката
+// ovde e proverkava na sve zivo i divo
   let passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;// regex mi e kopiran  i teksov mi e sekako
   if (!passwordRegex.test(password)) {
-    console.error("Invalid password. Password must contain at least 8 characters, one uppercase letter, one lowercase letter, and one digit.");
-    displayPasswordError();
+   console.error("Invalid password. Password must contain at least 8 characters, one uppercase letter, one lowercase letter, and one digit.");
+   displayPasswordError();
     return;
   }
 
@@ -73,3 +72,4 @@ function displayPasswordError(message) {
   let passwordError = document.getElementById('password-error');
   passwordError.textContent = message || "Invalid password. Password must contain at least 8 characters, one uppercase letter, one lowercase letter, and one digit.";
 }
+
