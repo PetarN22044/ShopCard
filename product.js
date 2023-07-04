@@ -54,7 +54,7 @@ function addToCart(productId) {
   if (isUserLoggedIn()) {
     addProductToCart(productId);
   } else {
-    alert('Мора да бидете најавени за да додадете во кошничката.');
+    alert('have to be loaded.');
   }
 }
 
