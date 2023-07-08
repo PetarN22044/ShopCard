@@ -396,29 +396,84 @@ section.vh-60 {
 
 /* delot kaj so e najaven */
 #loggedInUser {
-  display: none;
+  position: relative;
+  display: flex;
+  align-items: center;
   background-color: #ffffff;
   color: #333333;
   padding: 8px 16px;
   border-radius: 4px;
   font-weight: bold;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
 #loggedInUser::before {
   content: "Welcome, ";
+  margin-right: 8px;
 }
 
 #loggedInUser:hover {
   background-color: #f0f0f0;
 }
 
-/* button logout */
 #logoutBtn {
   display: none;
   margin-left: 8px;
 }
-#loggedInUser {
-  position: relative;
+
+#loggedInUser:hover #logoutBtn {
+  display: block;
 }
 
+#logoutBtn:hover {
+  background-color: #ff0000;
+  color: #ffffff;
+}
+
+
+/* za mestovo kaj so e korisnikov so negovo ime  */
+
+
+#loggedInUser {
+  position: relative;
+  display: inline-block;
+  background-color: #333333;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(165, 160, 160, 0.2); 
+}
+
+#loggedInUser::before {
+  content: "Welcome, ";
+  margin-right: 8px;
+}
+
+#loggedInUser:hover {
+  background-color: #ff0000;
+  color: #ffffff;
+}
+
+#loggedInUser:hover::before {
+  color: #ffffff;
+}
+
+#logoutBtn {
+  display: none;
+  margin-left: 8px;
+}
+
+#loggedInUser:hover #logoutBtn {
+  display: block;
+}
+
+#logoutBtn:hover {
+  background-color: #ffffff;
+  color: #ff0000;
+}
 
