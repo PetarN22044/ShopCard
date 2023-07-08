@@ -13,63 +13,61 @@ if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig);
 }
 
-// Преземете референца до 'register-form' во Firebase Realtime Database
-var registerFormRef = firebase.database().ref('register-form');
+var registerForm = document.getElementById('register-form');
 
-// pocvit od sumbit formava i funkcijava 
-document.getElementById('register-form').addEventListener('submit', submitForm);
+registerForm.addEventListener('submit', submitForm);
 
 function submitForm(e) {
   e.preventDefault();
 
-  // ovde gi zemame od pass email i ostanati po val mojt da se racunat i po id ama isto e 
-let name = getElementVal('form3Example1cg');
-let yourEmail = getElementVal('form3Example3cg');
-let password = getElementVal('form3Example4cg');
-let confirmPassword = getElementVal('form3Example4cdg');
-// ovde e proverkava na sve zivo i divo
-  let passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;// regex mi e kopiran  i teksov mi e sekako
+  var name = getElementVal('form3Example1cg');
+  var yourEmail = getElementVal('form3Example3cg');
+  var password = getElementVal('form3Example4cg');
+  var confirmPassword = getElementVal('form3Example4cdg');
+
+  var passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
   if (!passwordRegex.test(password)) {
-   console.error("Invalid password. Password must contain at least 8 characters, one uppercase letter, one lowercase letter, and one digit.");
-   displayPasswordError();
+    console.error("Invalid password. Password must contain at least 8 characters, one uppercase letter, one lowercase letter, and one digit.");
+    displayPasswordError()
     return;
   }
 
-  // dali pass e okej
   if (password !== confirmPassword) {
     displayPasswordError("Passwords do not match.");
     return;
   }
 
-  // e ovde e magijava ovde gi cuvat datava od firebase
-  saveMessage(name, yourEmail, password);
-
-  // skrij ja formava ili display="none"
-  document.getElementById('register-form').style.display = "none";
-// ako e okej togas ne pustat na stranicava success
-  window.location.href = "success.html";
+  console.log(name, yourEmail, password);
+  saveMessage(name, yourEmail, password)
+    .then(() => {
+      console.log("Registration saved successfully!");
+      registerForm.style.display = "none";
+      window.location.href = "success.html";
+    })
+    .catch((error) => {
+      console.error("Error saving registration:", error);
+    });
 }
 
 function saveMessage(name, yourEmail, password) {
-  //kreirame nova referenca za da gi zacuvame
-  let newRegisterFormRef = registerFormRef.push();
-  newRegisterFormRef.set({
+  var registerFormRef = firebase.database().ref('register-form');
+
+  var newRegisterFormRef = registerFormRef.push();
+  return newRegisterFormRef.set({
     name: name,
     email: yourEmail,
     password: password
-  }).then(() => {
-    console.log("Registration saved successfully!");
-  }).catch((error) => {
-    console.error("Error saving registration:", error);
-  });
-}
 
+  });
+
+  console.log(newRegisterFormRef.set());
+
+}
 function getElementVal(id) {
   return document.getElementById(id).value;
 }
 
-function displayPasswordError(message) {
-  let passwordError = document.getElementById('password-error');
-  passwordError.textContent = message || "Invalid password. Password must contain at least 8 characters, one uppercase letter, one lowercase letter, and one digit.";
+function displayPasswordError() {
+  var passwordError = document.getElementById('password-error');
+  passwordError.textContent = "Invalid password. Password must contain at least 8 characters, one uppercase letter, one lowercase letter, and one digit.";
 }
-
