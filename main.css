@@ -399,8 +399,8 @@ section.vh-60 {
   position: relative;
   display: flex;
   align-items: center;
-  background-color: #ffffff;
-  color: #333333;
+  background-color: black;
+  color: white;
   padding: 8px 16px;
   border-radius: 4px;
   font-weight: bold;
@@ -409,12 +409,12 @@ section.vh-60 {
 }
 
 #loggedInUser::before {
-  content: "Welcome, ";
+  content: "Welcome : ";
   margin-right: 8px;
 }
 
 #loggedInUser:hover {
-  background-color: #f0f0f0;
+  background-color: #757272;
 }
 
 #logoutBtn {
@@ -427,53 +427,47 @@ section.vh-60 {
 }
 
 #logoutBtn:hover {
-  background-color: #ff0000;
+  background-color: #a5e063;
   color: #ffffff;
 }
 
 
 /* za mestovo kaj so e korisnikov so negovo ime  */
-
-
-#loggedInUser {
-  position: relative;
-  display: inline-block;
-  background-color: #333333;
-  color: #ffffff;
-  padding: 8px 16px;
-  border-radius: 4px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+.btn1 {
+  width: 200px;
+  height: 40px;
+  font-size: 1em;
   cursor: pointer;
+  background-color: #171717;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: all .4s;
   text-decoration: none;
-  box-shadow: 0 4px 10px rgba(165, 160, 160, 0.2); 
-}
+  text-align: center;
+ }
+ 
+ .btn1:hover {
+  border-radius: 5px;
+  transform: translateY(-10px);
+  box-shadow: 0 7px 0 -2px #f85959,
+   0 15px 0 -4px #39a2db,
+   0 16px 10px -3px #39a2db;
+ }
+ 
+ .btn1:active {
+  transition: all 0.2s;
+  transform: translateY(-5px);
+  box-shadow: 0 2px 0 -2px #f85959,
+   0 8px 0 -4px #39a2db,
+   0 12px 10px -3px #39a2db;
+ }
 
-#loggedInUser::before {
-  content: "Welcome, ";
-  margin-right: 8px;
-}
+/* za eden baton ovde koristime 2 css eden po #id drug po btn1 ili klasa */
 
-#loggedInUser:hover {
-  background-color: #ff0000;
-  color: #ffffff;
-}
 
-#loggedInUser:hover::before {
-  color: #ffffff;
-}
 
-#logoutBtn {
+/* slika za for mmore food ako ne e najaven korisnikot */
+.hidden {
   display: none;
-  margin-left: 8px;
 }
-
-#loggedInUser:hover #logoutBtn {
-  display: block;
-}
-
-#logoutBtn:hover {
-  background-color: #ffffff;
-  color: #ff0000;
-}
-

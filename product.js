@@ -122,6 +122,7 @@ function payment(){
   document.activeElement.blur();
 }
 
+document.getElementById('collectFromCartButton').addEventListener('click', collectFromCart);
 
 function collectFromCart() {
   let cart = getCartFromLocalStorage();
@@ -133,12 +134,25 @@ function collectFromCart() {
     displayCartProducts();
   }
 
-  function displayEmptyCartMessage() {
-    let emptyCartMessage = document.createElement('p');
-    emptyCartMessage.className = 'empty-cart-message';
-    emptyCartMessage.textContent = 'Your cart is empty.';
-    productCardsContainer.appendChild(emptyCartMessage);
-  }
+ 
+    function displayEmptyCartMessage() {
+      let alertDiv = document.createElement('div');
+      alertDiv.className = 'custom-alert';
+  
+      alertDiv.innerHTML = `
+        <h2>Your cart is empty</h2>
+        <p>Please login to continue.</p>
+        <button onclick="closeAlert()">Close</button>
+      `;
+  
+      document.body.appendChild(alertDiv);
+    }
+  
+    window.closeAlert = function() {
+      let alertDiv = document.querySelector('.custom-alert');
+      alertDiv.parentNode.removeChild(alertDiv);
+    }
+  
 
   function displayCartProducts() {
     productCardsContainer.innerHTML = ''; // se praznit container pred da se prikazit

@@ -31,6 +31,11 @@
   display: block;
  
 }
+.product-card:hover img {
+  transform: scale(1.1); 
+
+}
+
 
 .product-card .card-body {
   display: flex;
@@ -183,5 +188,64 @@
     margin-right: 20px; 
     margin-top: 4px; 
   }
+  /* see what do you want button */
+  #collectFromCartButton {
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block;
+    font-size: 16px; 
+    border-radius: 4px; 
+    transition-duration: 0.4s;
+    cursor: pointer; 
+  }
+  #collectFromCartButton:hover {
+    background-color: #45a049; 
+  }
+  
+
+
+  .custom-alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    max-width: 80%;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .custom-alert h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .custom-alert p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .custom-alert button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .custom-alert button:hover {
+    background-color: red;
+  }
+  
+
   
   
