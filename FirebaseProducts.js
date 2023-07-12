@@ -95,7 +95,7 @@ const firebaseConfig = {
   ];
 
 
-
+//vaka gi redime podatocive od produktive vo baza za da stojat zacuvani kako informacii
   var database = firebase.database();
 
   database.ref('products').set(products)
