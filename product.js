@@ -1,3 +1,4 @@
+//!
 let products = [
   {
     name: 'Product 1',

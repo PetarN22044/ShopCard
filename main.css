@@ -447,7 +447,7 @@ section.vh-60 {
   color: #ffffff;
 }
 
-
+/* ! */
 /* za mestovo kaj so e korisnikov so negovo ime  */
 .btn1 {
   width: 200px;
@@ -510,6 +510,9 @@ section.vh-60 {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.1);
 }
+
+
+
 
 
 

@@ -104,4 +104,4 @@ const firebaseConfig = {
     })
     .catch(function (error) {
       console.error('Error  with adding products to database: ', error);
-    });
+    });//!

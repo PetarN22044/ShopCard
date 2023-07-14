@@ -1,3 +1,4 @@
+//!
 const firebaseConfig = {
   apiKey: "AIzaSyBIVsl52lvKStSf7tVSNGoZm9K4eNC20nQ",
   authDomain: "sedc-project1.firebaseapp.com",

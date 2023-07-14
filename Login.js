@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() { // ako DOmContentLoad
     };
     firebase.initializeApp(config);
   }
-
+// !
   //Ovde ako e najaven sledvit celava logika so batonive i site raboti ponatamu
   function checkLoginStatus() {
     var loggedInUser = localStorage.getItem('loggedInUser');

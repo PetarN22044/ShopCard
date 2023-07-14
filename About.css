@@ -150,8 +150,46 @@
     font-size: 1rem;
   }
 
+ 
+  /* ! */
+  
+  
+  
+  
+  
+  
+  
+  
 
+/* animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
+.animated {
+  animation-duration: 4s;
+  animation-fill-mode: both;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
 
  
   
+
+
+
+
+
+
+
+
+
+
+
