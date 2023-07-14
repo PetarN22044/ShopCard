@@ -22,8 +22,6 @@ document.addEventListener('DOMContentLoaded', function() { // ako DOmContentLoad
       loggedInUser = JSON.parse(loggedInUser);
 
       // prikazi gi potrebnive elementi na najaven
-      //registerBtn ke se skriet so loginbtn,loggedInUser se mislit na konekstot vnatre so email i name of user. pa iniline blok prikaz i 
-      // plus logout da se prikazit so istoto
  document.getElementById('registerBtn').style.display = 'none';
  document.getElementById('loginBtn').style.display = 'none';
  document.getElementById('loggedInUser').textContent = loggedInUser.name;
@@ -43,7 +41,6 @@ document.addEventListener('DOMContentLoaded', function() { // ako DOmContentLoad
 
       // ovde se prokazvat formive za register i  login
       document.getElementById('registerBtn').style.display = 'block';
-
       document.getElementById('loginBtn').style.display = 'block';
     }
   }
@@ -51,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() { // ako DOmContentLoad
   // da se proverit najavava
   checkLoginStatus();
 
-  document.getElementById('loginButton').addEventListener('click',   function(event) {
+  document.getElementById('loginButton').addEventListener('click', function(event) {
     event.preventDefault();
 
     var email = document.getElementById('email').value;
