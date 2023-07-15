@@ -94,29 +94,20 @@ document.addEventListener('DOMContentLoaded', function() { // ako DOmContentLoad
         }
       })
       .catch(error => {
-        console.error('Error now:', error);
+        console.error('Error for you:', error);
       });
   });
 
   document.getElementById('logoutBtn').addEventListener('click', function() {
     firebase.auth().signOut().then(function() {
-      console.log("User successfully loged out.");
+      console.log("User is successfuly loged out.");
       localStorage.removeItem('loggedInUser');
 
       checkLoginStatus();
     }).catch(function(error) {
-      console.error("Logout error:", error);
+      console.error("Logout error1:", error);
     });
   });
 
-  // ovde se brisat buttons = "registerBtn" и "loginBtn"
-  var registerBtns = document.getElementsByClassName('registerBtn');
-  for (var i = 0; i < registerBtns.length; i++) {
-    registerBtns[i].remove();
-  }
-
-  var loginBtns = document.getElementsByClassName('loginBtn');
-  for (var i = 0; i < loginBtns.length; i++) {
-    loginBtns[i].remove();
-  }
+  
 });
